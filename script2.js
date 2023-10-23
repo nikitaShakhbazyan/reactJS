@@ -100,7 +100,7 @@ function Card(props) {
     React.createElement("h2",null,[props.email]),
     React.createElement("h3",null,`Person's gender is ${[props.gender]}`),
     React.createElement("h4",null,`Person's age is ${[props.age]} year old`),
-    React.createElement('h4',null,`The job is ${[props.job]}`)
+    React.createElement('h4',null,`The job is ${[props.job]}`) 
   ]);
 }
 function App() {
