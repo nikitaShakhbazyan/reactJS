@@ -1,0 +1,14 @@
+.App {
+  text-align: center;
+}
+.CardDiv {
+  border: 2px solid green;
+}
+#root {
+  display: flex;
+  flex-direction: column;
+  /* width: 100%; */
+  justify-content: center;
+  align-items: center;
+  background-color: antiquewhite;
+}
