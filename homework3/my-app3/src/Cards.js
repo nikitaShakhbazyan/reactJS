@@ -1,5 +1,6 @@
-    
-    const users = [
+import React from "react";
+
+const users = [
     {
       gender: "female",
       name: {
@@ -571,3 +572,27 @@
       nat: "RS",
     },
   ];
+
+
+
+
+
+function Card() {
+  return (
+    <div >
+    {users.map((user, index) => (
+      <div className="CardDiv" key={index}>
+         <img src={user.picture.large}/>
+         <p>User Picture</p>
+        <h1>Name: {user.name.first} {user.name.last}</h1>
+        <h4>Email: {user.email}</h4>
+         <p>Gemder : {user.gender} </p>
+         <p>User's location : <b> {user.location.city},{user.location.state},{user.location.country}</b> </p>
+         <p>Postcode : {user.location.postcode}, Timezone {user.location.timezone.description} </p>
+      </div>
+    ))}
+  </div>
+  );
+}
+
+export default Card;

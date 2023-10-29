@@ -1,4 +1,5 @@
 import React, { useState, useRef } from "react";
+import Card from "./Cards";
 
 function Input() {
   const [email, setEmail] = useState("");
@@ -9,14 +10,14 @@ function Input() {
   const passwordRef = useRef(0);
 
   const handleLogin = () => {
-    setLoggedIn(email === "digitalAcademy@gmail.com" && password === "iLoveReact123" ? true : false);
+    setLoggedIn(email === "1" && password === "1" ? true : false);
 
   };
 
   return (
     <div>
       {loggedIn ? (<div>
-          <h1>Welcome to the Main Site</h1>
+          <Card/>
         </div>
       ) : (
         <div>
