@@ -10,7 +10,7 @@ function Input() {
   const passwordRef = useRef(0);
 
   const handleLogin = () => {
-    setLoggedIn(email === "digitalAcademy@gmail.com" && password === "iLoveReact123" ? true : false);
+    setLoggedIn(email === "digitalAcademy@gmail.com" && password === "  " ? true : false);
 
   };
 
