@@ -1,8 +1,7 @@
 import React from 'react'
 import useFetch from "../useFetch/useFetch"
-import styles from './home.module.css';
+import styles from './georgian.module.css';
 import Navbar from '../Components/Navbar';
-import Details from './Details';
 import { Link } from "react-router-dom";
 
 
@@ -37,7 +36,6 @@ function Home () {
     
       return (
         <div className={styles.main}>
-            <Navbar/>
         <div className={styles.inMain}>
             {mappedData}
         </div>

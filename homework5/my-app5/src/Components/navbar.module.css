@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.navButton {
+    text-decoration: none;
+    color: blue;
+    border: 2px solid blue;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+.navButton:hover {
+    background-color: lightblue;
+}
