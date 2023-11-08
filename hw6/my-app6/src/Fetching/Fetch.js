@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const URL = "https://jsonplaceholder.typicode.com/posts";
 
 export default function Fetching() {
-  const [posts, setPosts] = useState([]);
+  const [posts, setPosts] = useState([]); 
 
   useEffect(() => {
     axios.get(URL)
