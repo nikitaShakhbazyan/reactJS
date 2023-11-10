@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import styled from 'styled-components'
 
 function Cards() {
   const [data, setData] = useState([]);
@@ -50,24 +51,46 @@ const pickupFunc = (()=> {
   return (
     <div>
       <h1>Cards</h1>
-<p>Added items:</p>
+    <p>Added items:</p>
   <ul>
     {items.map((addedItem, index) => (
       <li key={index}>{addedItem.title}</li>
     ))}
   </ul>
-      <ul>
+      <StyledMainDiv>
         {SlisedData.map((item) => (
-            <div>
-          <p key={item.id}>{item.title}</p>
+            <ItemDiv>
+          <divWithKey key={item.id}>
+            <img src={item.thumbnail} alt='Item'/>
+            <h1>{item.title}</h1>
+            <h2>{item.description}</h2>
+          </divWithKey>
           <button onClick={pickupFunc}>Add products to Cart</button>
-          </div>
+          </ItemDiv>
         ))}
-      </ul>
+      </StyledMainDiv>
     </div>
   );
 }
 
 export default Cards;
 
-  
+
+const StyledMainDiv = styled.div `
+background-color:grey;
+display:grid;
+grid-template-columns:50% 50%;
+border:2px solid gold
+
+`
+const ItemDiv = styled.div `
+border:2px solid green;
+padding:10px;
+display:flex;
+justify-content:space-around;
+flex-direction:column;
+`
+const divWithKey = styled.div `
+width:40%;
+height:auto;
+`
