@@ -93,4 +93,7 @@ flex-direction:column;
 const divWithKey = styled.div `
 width:40%;
 height:auto;
+margin:30px auto;
+text-align:center;
+font-size:large;
 `
